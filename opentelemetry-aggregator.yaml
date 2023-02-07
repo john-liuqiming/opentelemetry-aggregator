@@ -3,6 +3,7 @@ dist:
   description: A OpenTelemetry collector distribution for cloud native observability
   output_path: .
 
+
 exporters:
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/exporter/alibabacloudlogserviceexporter v0.70.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/exporter/fileexporter v0.70.0
@@ -24,7 +25,6 @@ receivers:
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8seventsreceiver v0.70.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver v0.70.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver v0.70.0
-  - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filereceiver v0.70.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filelogreceiver v0.70.0
 
 processors:
@@ -44,6 +44,4 @@ processors:
 
 extensions:
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckextension v0.70.0
-  - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer v0.70.0
-  - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage v0.70.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/extension/pprofextension v0.70.0
